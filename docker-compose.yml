@@ -1,0 +1,19 @@
+# run tensorflow from dockers -  play-with-docker.com
+
+# to run : http://play-with-docker.com/?stack=https://gist.githubusercontent.com/azizasm/2e8ba3c81a3ba1811f17d48275d6d2b8/raw/docker-compose.yml
+
+
+# Use root/example as user/password credentials
+version: '3.1'
+services:
+  tensorflow:
+    restart: always
+    image: tensorflow/tensorflow:nightly-py3
+#    container_name : zys
+    ports:
+     - 8888:8888
+#    environment:
+#      MYSQL_ROOT_PASSWORD: root
+volumes:
+  logvolume01: {}
+  sitevolume: {}
