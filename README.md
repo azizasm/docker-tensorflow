@@ -14,8 +14,11 @@ change directory to `docker-tensorflow` and run `docker-compose`
     
     $ cd docker-tensorflow
     $ docker-compose up -d
-
-Open up the blue hyperlink
+    
+Obtain the token  and copy into clipboard 
+    $ docker logs `docker container ls -q`
+    
+Open up the blue hyperlink and enter token 
 
 
 To stop your services once you’ve finished with them:
