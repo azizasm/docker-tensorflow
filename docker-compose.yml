@@ -6,14 +6,16 @@
 # Use root/example as user/password credentials
 version: '3.1'
 services:
- build: 
-   context: .
-   dockerfile: Dockerfile
+
       
   tensorflow:
     restart: always
     image: tensorflow/tensorflow:nightly-py3
 #    container_name : zys
+   build: 
+   context: .
+   dockerfile: Dockerfile
+   
     ports:
      - 8888:8888
 #    environment:
